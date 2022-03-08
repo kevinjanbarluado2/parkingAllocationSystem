@@ -59,7 +59,6 @@ cli.on('line', (line) => {
     cli.prompt();
 
 }).on('close', () => {
-
     console.log(chalk.red('Closing App...Thank you'));
     process.exit(0);
 

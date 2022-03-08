@@ -55,7 +55,6 @@ export class Parking {
         } else {
             console.log('Parking is not Occupied Yet.\n\n')
         }
-
     }
 
     computeFee = (s, totalTime) => {
@@ -66,9 +65,9 @@ export class Parking {
         let hourlyCharge = 0
 
         switch (size) {
-            case 0: hourlyCharge = 20; break
-            case 1: hourlyCharge = 60; break
-            case 2: hourlyCharge = 100; break
+            case 0: hourlyCharge = 20; break //Small Vehicle
+            case 1: hourlyCharge = 60; break //Medium Vehicle
+            case 2: hourlyCharge = 100; break //Large Vehicle
         }
 
         //  For parking that exceeds 24 hours, every full 24 hour chunk is charged 5,000 pesos regardless of parking slot.
